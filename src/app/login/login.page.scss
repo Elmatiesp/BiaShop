@@ -1,0 +1,80 @@
+ion-content{
+    --background: #EEEDF0;
+    font-family: "Homer Simpson UI";
+    .header{
+        h1{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 42px;
+        }
+        h3{
+            text-align: center;
+            color: #696969;
+            font-size: 30px;
+            margin-bottom: 62px;
+        }
+    }
+
+    .form{
+        text-align: left;
+        margin-top: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
+        .form-control{
+            border-radius: 12px;
+            height: 52px;
+            margin-top: 12px;
+            background-color: #FFFFFF;
+        }
+    }
+
+    .forgot{
+        text-align: right;
+        padding-right: 32px;
+        color: #696969;
+    }
+
+    .button{
+        .boton{
+            background-color: #D46060;
+            margin-top: 32px;
+            margin-left: 32px;
+            margin-right: 32px;
+            text-align: center;
+            color: #FFFFFF;
+            height: 52px;
+            border-radius: 12px;
+        }
+        h3{
+            padding-top: 12px;
+        }
+    }
+    .footer{
+        h5{
+            padding-top: 32px;
+            text-align: center;
+        }
+        ion-grid{
+            text-align: center;
+        }
+        ion-button{
+            ion-icon{
+                font-size: 40px;
+            }
+            height: 60px;
+            width: 100px;
+            color: #696969;
+            --border-color: #696969;;
+        }
+
+        ion-grid {
+            --ion-grid-padding: 15px;
+        }
+        h3{
+            text-align: center;
+        }
+        span{
+            color: #3A5CDD;
+        }
+    }
+}

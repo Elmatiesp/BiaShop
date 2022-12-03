@@ -1,0 +1,7 @@
+{
+  "name": "Biashop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

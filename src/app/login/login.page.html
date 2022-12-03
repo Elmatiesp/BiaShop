@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="header">
+    <h1>Kallona App</h1>
+    <h3>¡Bienvenido! <br> Te extrañamos mucho :(</h3>
+  </div>
+  <div class="form">
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <div>
+          <ion-input type="email" placeholder="Correo Electronico" class="form-control" formControlName="email"></ion-input>
+      </div>
+      <div>
+          <ion-input type="password" placeholder="Contraseña" class="form-control" formControlName="password"></ion-input>
+      </div>
+  </form>
+  </div>
+  <div class="forgot">
+    <h5 (click)="registrarse()">Olvidé mi contraseña</h5>
+  </div>
+  <div class="button" (click)="onSubmit()">
+    <h3 class="boton">Iniciar Sesión</h3>
+  </div>
+  <div class="footer">
+    <h5>----- Inicia con redes sociales -----</h5>
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col>
+          <ion-button fill="outline" [disabled]="true">
+            <ion-icon name="logo-apple"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="onClick()"> 
+            <ion-icon name="logo-google"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" [disabled]="true">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h3 routerlink="/register">No tienes cuenta? <span (click)="registrarse()">Registrarse</span></h3>
+  </div>
+</ion-content>
